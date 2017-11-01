@@ -1,0 +1,26 @@
+<html>
+<Head><title>metrotv</title>
+<script type="text/javascript" src="https://cdn.rawgit.com/umar83/jwplayer/f13c05d7/jwplayer-7.9.3/jwplayermetro.js"></script>
+<script>jwplayer.key="ypdL3Acgwp4Uh2/LDE9dYh3W/EPwDMuA2yid4ytssfI=";</script> 
+</head>
+<body> 
+<div id="streaming">Loading the player ...</div>
+<script type="text/javascript">
+jwplayer('streaming').setup({
+playlist:[{file:'https://firebasestorage.googleapis.com/v0/b/movie-e83b5.appspot.com/o/Nonton%20Film%2FKingsman%20The%20Golden%20Circle%202017.MP4?alt=media&token=d7a07799-9a4a-4da1-852a-3bd52ba3750a',
+title:'METROTV',mediaid:'5'}],
+width:"100%",aspectratio:"16:9",
+abouttext:'TV',
+stretching:"uniform",
+aboutlink:'',
+autostart:false,
+androidhls:true,
+controls:true,
+displaydescription:true,
+displaytitle:true,
+repeat:true,
+stagevideo:false,
+visualplaylist:false,
+cast:{appid:"chrome.cast.media.DEFAULT_MEDIA_RECEIVER_APP_ID"},skin:{"active":"#DF2148","inactive":"#CCCCCC","name":"glow"},plugins:{"https://www.metube.id/cc-content/themes/default/js/ping.js":{"pixel":"https://content.jwplatform.com/ping.gif"}}});jwplayer('myElement').on('error',function(){if(jwplayer('myElement').getPlaylistIndex()>=(jwplayer('myElement').getPlaylist().length-1)){$('#player-play');}});</script>
+</body>
+</html>
